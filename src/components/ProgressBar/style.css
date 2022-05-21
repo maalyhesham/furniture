@@ -1,0 +1,63 @@
+.progress-bar {
+    padding: 1px;
+    position: relative;
+    /* border: 2px solid lightgray; */
+    border-radius: 20px;
+    background-color: #eee;
+    /* color: white; */
+    min-width: 200px;
+    height: 13px;
+    /* overflow: hidden; */
+}
+.progress-bar.slim {
+    border-radius:0;
+    min-width: 250px;
+    height: 3px;
+}
+
+.progress-value{
+    background: var(--primary-color);
+    min-width: 70%;
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    position: relative;
+}
+
+.progress-value[data-value]::after{
+    position: absolute;
+    content: attr(data-value);
+    font-size: 8px;
+    color: white;
+    right: -8px;
+    bottom: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    height: 35px;
+    width: 20px;
+    
+    background-image: url(../../assets/images/palceMarker.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+[direction~=rtl] .progress-value::after{
+    left: -8px;
+    right: unset;
+}
+
+.progress-bar::after{
+    font-size: 13px;
+    color: grey;
+    position: absolute;
+    content: attr(data-value);
+    right: 5px;
+    bottom: 100%;
+    display: block;
+}
+[direction~=rtl] .progress-bar::after{
+    left: 5px;
+    right: unset;
+}

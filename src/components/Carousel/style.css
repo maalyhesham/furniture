@@ -1,0 +1,21 @@
+.carousel-slide-image{
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+    background-color: transparent;
+}
+.carousel-root {
+    margin: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel  {
+    border-radius: 5px;
+   
+}
+.carousel .carousel-status,
+.carousel .thumbs-wrapper {
+    display: none;
+}

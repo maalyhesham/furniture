@@ -1,0 +1,18 @@
+:root{
+    --primary-color : #0b77c2;
+    --primary-highlight-color : #3dbefd;
+    --secondary-color : #f7b825;
+}
+.greenish-theme{
+    --primary-color :#5abb81 ;
+    --primary-highlight-color : #1eb2a6;
+    --secondary-color : #84a9ac;
+}
+.purplish-theme{
+    --primary-color : #481380;
+    --primary-highlight-color : #7f78d2;
+    --secondary-color : #b590ca;
+}
+.primary-color-bg{
+    background-color: var(--primary-color);
+}

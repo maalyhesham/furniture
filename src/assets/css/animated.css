@@ -1,0 +1,24 @@
+svg#svg-503-error-service-unavailable:not(.animated) .animable {
+    opacity: 0;
+}
+
+svg#svg-503-error-service-unavailable.animated #Character--inject-34 {
+    animation: 1.5s Infinite linear floating;
+    animation-delay: 0s;
+}
+
+@keyframes floating {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

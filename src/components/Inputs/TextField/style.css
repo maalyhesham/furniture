@@ -1,0 +1,63 @@
+.text-input-filed-container {
+    position: relative;
+    display: flex;
+}
+
+.text-input-filed-container.with-label{
+    justify-content: space-between;
+}
+
+input.text-input-filed {
+    background-color: inherit;
+    border: 1px solid lightgray;
+    padding: 5px;
+    width: inherit;
+    border-radius: 3px;
+    color: #9b9b94;
+    height: 27px;
+    font-size: 17px;
+    background: #fff;
+
+}
+.input-label{
+    color: #9b9b94;
+    text-align: center;
+    margin-right: 10px;
+}
+.text-input-filed.error {
+    color: rgb(253, 93, 64);
+}
+
+input.text-input-filed:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem var(--primary-highlight-color);
+}
+.input-field-prefix + input.text-input-filed {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+[direction~=rtl] .input-field-prefix + input.text-input-filed {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+.input-field-prefix{
+    background-color: var(--primary-highlight-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0 5px;
+    min-width: 25px;
+}
+[direction~=rtl] .input-field-prefix{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}

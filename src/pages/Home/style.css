@@ -1,0 +1,32 @@
+.home-page{
+    overflow: auto;
+}
+.home-cover{
+    min-height: 40vh;
+    background-image: url(../../assets/images/endowment_logo_en.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: all .3s ease-in-out;
+}
+.organization-logo{
+    height: 70px;
+    width: 70px;
+    background: #eee;
+    border-radius: 5px;
+}
+.projects-list{
+    /* justify-content: space-between; */
+    /* flex: 1; */
+    /* align-content: flex-start; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
+    padding: 20px 15px;
+    max-width: 1200px;
+}
+@media only screen and (max-width: 768px) {
+    .projects-list{
+        justify-content: center;
+    }
+}

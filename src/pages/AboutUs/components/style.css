@@ -1,0 +1,11 @@
+.value-card{
+    max-width: 300px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    margin: 20px;
+    padding: 10px 15px;
+}
+.value-card-content{
+    text-align: justify;
+    color: gray;
+}
